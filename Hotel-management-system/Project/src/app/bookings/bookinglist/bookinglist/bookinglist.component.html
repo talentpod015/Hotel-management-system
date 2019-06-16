@@ -1,0 +1,23 @@
+<div fxLayout="row" fxLayoutGap="15px">
+  <app-filterhotel></app-filterhotel>
+  <div fxLayout="column">
+      <app-searchhotel></app-searchhotel>
+      <div>
+        <span style=margin-right:470px>{{ establishments.length }} Results</span>
+        <span style=padding-right:0px (click)="priceOnly()">Price only</span>
+        <span style=padding-right:0px (click)="ratingOnly()">Rating only</span>
+      <span style=float:right  (click)="sortBy()">Sort By</span>
+      
+       
+    </div>
+    <div fxLayout="row wrap" fxLayoutGap="10px">      
+      <div *ngFor="let bookingitem of establishments" fxFlex>
+        <app-bookingitem [appBookingItem]=bookingitem></app-bookingitem>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <mat-card fxLayout="row wrap" > -->
+<!-- </mat-card> -->

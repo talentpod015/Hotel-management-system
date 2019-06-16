@@ -1,0 +1,63 @@
+<form class="example-form">
+    <div class="bookbtn"> <button mat-button color="primary" >My Booking</button></div>
+     
+    <mat-toolbar color="">
+        <mat-toolbar-row>
+            <!-- <span>Hotel Management System</span> -->
+           
+            <label>Location:</label><br>
+            <mat-toolbar-row>
+            <mat-form-field class="">
+                <input matInput placeholder="Coimbatore,Tamilnadu,India" value="">
+              </mat-form-field>
+   
+            </mat-toolbar-row>
+  
+  
+  
+            <mat-form-field>
+                <mat-label>Select Guest</mat-label>
+                <mat-select [(value)]="selected">
+                  <mat-option>None</mat-option>
+                  <mat-option value="option1">1 Guest</mat-option>
+                  <mat-option value="option2">2 Guest</mat-option>
+                  <mat-option value="option3">3 Guest</mat-option>
+                </mat-select>
+              </mat-form-field>
+  
+            
+              <mat-form-field>
+                  <mat-label> </mat-label>
+                  <mat-select [(value)]="selected">
+                    <mat-option>None</mat-option>
+                    <mat-option value="option1">1 Room</mat-option>
+                    <mat-option value="option2">2 Room</mat-option>
+                    <mat-option value="option3">3 Room</mat-option>
+                  </mat-select>
+                </mat-form-field>
+    
+  
+           
+            <mat-form-field class="">
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="picker">
+                  <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+
+
+             
+                    <!-- <mat-form-field class="example-full-width">
+                    <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                        {{option}}
+                      </mat-option>
+                    </mat-autocomplete>
+                  </mat-form-field>   -->
+                
+              <button mat-raised-button (click)="getEstablishment()" color="primary">Search</button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</form>  
