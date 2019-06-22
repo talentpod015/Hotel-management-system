@@ -1,0 +1,28 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="bgimage">
+    <div id="conatainer-place">
+      <div class="example-container">
+        <div *ngIf="errormessage">{{errormessage}}</div>
+        <mat-form-field>
+          <input matInput class="right" placeholder="Enter your email" formControlName="email" required>
+          <mat-error *ngIf="profileForm.get('email').invalid">{{getEmailErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Enter your password" type="password" formControlName="password" required>
+          <mat-error *ngIf="profileForm.get('password').invalid">{{getPasswordErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+      </div>
+      <button mat-raised-button button="submit" color="primary">Sign In</button>
+      <br><br>
+
+      <div>
+        <a routerLink="/signup">New Users?</a>
+        <a routerLink="/signup">Sign Up</a>
+      </div>
+      <!-- <a  routerLink = '/signup'>New User ? <span>Signup Now</span></a> -->
+    </div>
+  </div>
+</form>
+<!-- </form> -->

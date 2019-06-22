@@ -1,0 +1,59 @@
+<form [formGroup]="filterForm">
+  <h3>Book my room</h3>
+  <mat-card>
+    <label>Filter</label><br>
+    <mat-form-field>
+      <input matInput placeholder="search by hotel" formControlName="search">
+    </mat-form-field>
+
+    <mat-card>
+      <label>Type</label><br><br>
+      <mat-checkbox formControlName="hotel">Hotel</mat-checkbox><br>
+      <mat-checkbox formControlName="homestay">Room stay</mat-checkbox>
+    </mat-card>
+    <br>
+    <br><br>
+    <!-- <div>
+      <label>Location</label><br>
+       <mat-form-field class="">
+        <input matInput placeholder="search" value="">
+      </mat-form-field>
+  <br>
+      <mat-checkbox>Gandhipuram</mat-checkbox><br>
+      <mat-checkbox>Rs puram</mat-checkbox><br>
+      <mat-checkbox>Ganpathy</mat-checkbox><br>
+      <mat-checkbox>Peelamedu</mat-checkbox><br>
+    </div> -->
+    <!-- <br> -->
+    <mat-card>
+      <label>Rating</label><br>
+      <div (click)="setRating(4)">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+      </div>
+
+      <div (click)="setRating(3)">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+      </div>
+
+      <div (click)="setRating(2)">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon>
+      </div>
+
+      <div (click)="setRating(1)"><mat-icon aria-hidden="false" aria-label="Example home icon" color="accent">star</mat-icon> </div>
+
+    </mat-card>
+    <br>
+    <!-- <mat-star-rating [rating]="rating"  [starCount]="starCount" [color]="starColor" (ratingUpdated)="onRatingChanged($event)"></mat-star-rating> -->
+    <!-- Price<br> -->
+    <mat-card>
+      <mat-slider min="1000" max="10000" formControlName="minPrice"></mat-slider><br>
+      <div>{{filterForm.get('minPrice').value}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>10000</span></div>
+    </mat-card>
+  </mat-card>
+</form>

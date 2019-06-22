@@ -1,0 +1,39 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+  /* .bgimage
+{
+  background-image: url('/assets/images/hotel4.jpeg');
+
+padding:37%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+height: 5%; 
+}         */
+
+
+/* #conatainer-place{
+  top:23%;
+  left:33%;
+  position: fixed;
+  width:27%;
+  background-color: rgb(230, 230, 230);
+  padding:6%;
+ /* background-image: url("/assets/images/download.jpeg");  
+
+} */
+
+/* .bgimage1
+{
+  background-image: url('/assets/images/hotel4.jpeg');  
+
+padding:37%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+height: 5%; 
+}      */

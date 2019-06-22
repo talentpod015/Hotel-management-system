@@ -1,0 +1,50 @@
+<form class="example-form" [formGroup]="profileForm" (ngSubmit)="submitForm()">
+    <div class="bgimage">
+  
+      <div id="conatainer-place">
+          <!-- <img src="../../../assets/images/download.jpeg" style="height: 224px;width:380px;"> -->
+          <div class="example-container">
+    <mat-toolbar color="">
+      
+      <mat-toolbar-row>
+        <mat-toolbar-row>
+          <mat-form-field class="">
+            <input matInput placeholder="Location" formControlName="location" required>
+            <mat-error *ngIf="profileForm.get('location').invalid">{{getLocationErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+        </mat-toolbar-row>
+        <mat-form-field class="example-full-width">
+          <input type="number" placeholder="No of Guest" aria-label="Number" matInput formControlName="capacity">
+        </mat-form-field>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <mat-form-field class="">
+          <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" color="primary">Search</button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <br>
+    <!-- <div class="bgimage1">
+        <img src="../../../assets/images/hotel3.jpeg"><br>
+    </div>
+     -->
+    
+      </div>
+  </div>
+  </div>
+  <!-- </div> -->
+</form>
+ 
+
+
+
+
+
+
+

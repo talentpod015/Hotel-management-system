@@ -1,0 +1,48 @@
+<form class="example-form">
+   
+  <label><h2>Book my room</h2></label><br>
+  <label>Filter</label><br>
+  <mat-form-field class="">
+    <input matInput placeholder="search by hotel" value="">
+  </mat-form-field>
+
+
+
+<div class="maindiv">
+  <div>
+<label>Type</label><br><br>
+    <mat-checkbox>Hotel</mat-checkbox><br>
+    <mat-checkbox>Room stay</mat-checkbox>
+  </div>
+  <br>
+
+  <div>
+    <label>Location</label><br>
+    <mat-form-field class="">
+      <input matInput placeholder="search" value="">
+    </mat-form-field>
+<br>
+    <mat-checkbox>Gandhipuram</mat-checkbox><br>
+    <mat-checkbox>Rs puram</mat-checkbox><br>
+    <mat-checkbox>Ganpathy</mat-checkbox><br>
+    <mat-checkbox>Peelamedu</mat-checkbox><br>
+
+
+  </div>
+  <br>
+  <div>
+    <label>Rating</label><br>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+    <!-- <mat-star-rating [rating]="rating"  [starCount]="starCount" [color]="starColor" (ratingUpdated)="onRatingChanged($event)"></mat-star-rating> -->
+  </div>
+<br><br>
+  <div>
+    <label>Price</label><br>
+    <mat-slider></mat-slider>
+
+  </div>
+
+</div>
+
+
+  </form>

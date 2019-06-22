@@ -1,0 +1,23 @@
+<div fxLayout="row" fxLayoutGap="15px">
+  <app-filterhotel></app-filterhotel>
+  <div fxLayout="column">
+    <app-searchhotel></app-searchhotel>
+    <!-- <app-searcbyallcariteria></app-searcbyallcariteria> -->
+    <div style=padding:10px>
+      <span style=margin-right:747px>{{ establishments.length }} Results</span>
+      <span style=margin-left:15 (click)="sortBy()">Sort By</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style=margin-right:36px (click)="priceOnly()">Price only</span>
+      <span style=margin-right:70px (click)="ratingOnly()">Rating only</span>
+    </div>
+    
+    <div fxLayout="row wrap" fxLayoutGap="10px">
+      <div *ngFor="let bookingitem of establishments" fxFlex>
+        <app-bookingitem [appBookingItem]=bookingitem></app-bookingitem>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <mat-card fxLayout="row wrap" > -->
+<!-- </mat-card> -->

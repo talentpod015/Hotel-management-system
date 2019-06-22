@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <div><h2>Hotel-Booking</h2></div>
+        <span style="margin-left:950px"></span>
+        <div class="bookbtn"> <button mat-button color="" routerLink="/signin" *ngIf="!isLoggedIn" >Sign In</button></div>
+        <div class="bookbtn"> <button mat-button color="" routerLink="/signup" style=margin-right:30px >Sign Up</button></div>
+        <div class="bookbtn"> <button mat-button color="ascent" routerLink="/mybookings"  *ngIf="isLoggedIn" >My Booking</button></div>
+        <div class="bookbtn"> <button mat-button color="ascent" routerLink="/editprofile"  *ngIf="isLoggedIn" >Edit Profile</button></div>
+        <div class="bookbtn"> <button mat-button color="" *ngIf="isLoggedIn" style=margin-right:70px (click)="logout()">Log Out</button>
+            
+        </div>
+        
+        <!-- <button mat-raised-button  color="primary" class="c"  routerLink="editprofile" *ngIf="isLoggedIn">EditProfile</button>      -->
+        <!-- <button mat-button class="signin" routerLink="/signin" *ngIf="isLoggedIn">Signin</button>
+  <button mat-button class="b"  *ngIf="isLoggedIn" (click)="auth.logout()"></button> -->
+    </mat-toolbar-row>
+
+
+
+</mat-toolbar>
+<br>

@@ -1,0 +1,267 @@
+/* .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .bg-img {
+    
+    background-image: url("/assets/images/hotel4.jpeg");
+  
+    
+    min-height: 900px;
+  
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+
+  .right { text-align: right }
+
+  .done {    
+    /* position: fixed;     */
+    /* bottom: 20px;    
+    right: 220px;    
+    color: rgb(185, 53, 53);    
+}     */
+
+/* .demo-form {    
+  min-width: 150px;    
+  max-width: 500px;    
+  width: 100%;    
+}
+
+body {    
+  margin: 0;    
+  font-family: Roboto, sans-serif;    
+}  */
+
+/* mat-card {   
+  background-position: center; 
+  bottom: 2px; 
+  top:5px;
+  max-width: 80%;    
+  margin: 1em auto;    
+  text-align: center;    
+}     */
+
+/* .center { */
+  /* margin: auto; */
+  /* width: 38%; */
+  /* border: 5px solid #73AD21; */
+  /* padding: 10px; */
+  /* top:5px; */
+  /* bottom: 20px; */
+  
+
+
+  /* border: 2px solid blue;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 20%;  
+
+  margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    margin-top: 1px; */
+  /* left:50%;  */
+  /* position: absolute; */
+/* } */ */
+
+
+
+
+
+.bg-img {
+    
+  background-image: url("/assets/images/hotel4.jpeg");
+
+  
+  min-height: 900px;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.mat-card {    
+  text-align: -webkit-center;    
+}    
+  
+.demo-toolbar {    
+  display: flex;    
+  align-items: center;    
+  width: 100%;    
+}    
+  
+.demo-form {    
+  min-width: 150px;    
+  max-width: 500px;    
+  width: 100%;    
+}    
+  
+.demo-full-width {    
+  width: 100%;    
+}    
+  
+body {    
+  margin: 0;    
+  font-family: Roboto, sans-serif;    
+}    
+  
+mat-card {    
+  max-width: 80%;    
+  margin: 2em auto;    
+  text-align: center;    
+}    
+  
+mat-toolbar-row {    
+  justify-content: space-between;    
+}    
+  
+.done {    
+  position: fixed;    
+  bottom: 20px;    
+  right: 20px;    
+  color: white;    
+}    
+  
+.content-center {    
+  text-align: -webkit-center;    
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin:0px;
+  padding:0px;
+  font-family: sans-serif;
+  /* background-image:url('./assets/images/bg.jpg'); */
+}
+.header{
+  background: #000;
+  color: #ffffff;
+  text-align: left;
+  left:0px;
+  top:0px;
+  height:8%;
+
+  width:100%;
+}
+.footer{
+  background-color:#3f51b5;
+  color: #ffffff;
+  text-align: left;
+  height:8%;
+  bottom:0px; 
+  left:0px;
+  position: fixed;
+  width:100%;
+  border-color:#bbbbbb;
+}
+.htest{
+  padding-top:1%;
+  font-size: 20px;
+  font-family: cursive;
+}
+#conatainer-place{
+  top:23%;
+  left:33%;
+  position: fixed;
+  width:27%;
+  background-color: rgb(230, 230, 230);
+  padding:6%;
+ /* background-image: url("/assets/images/download.jpeg"); */
+
+}
+.container-block{
+background-color:#f8f8f8;
+ padding:2%;
+height:auto;
+width:auto;
+margin-top:35%;
+border-color:#bbbbbb;
+}
+.text-center{
+  cursor:pointer !important;
+  padding-top:1% !important;
+
+}
+
+#conatainer-place .example-button-row{
+  text-align:center;
+  padding-top:3%;
+}
+.example-button-row::after{
+  text-align: center;
+}
+.example-button-row ~ a{
+  text-align:center;
+  color:blue;
+  padding-top:2% !important;
+  font-weight: bold;
+  cursor:pointer;
+  padding-left:30%;
+}
+.example-button-row a span {
+  color:rgb(238, 215, 13);
+}
+/* css from materila  */
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+div.bg-image
+{
+  background-image: url("/assets/images/hotel4.jpeg");
+  min-height: 10px;
+
+/* 
+  background-position: center; */
+     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+    
+}
+
+.bgimage
+{
+padding:37%;
+background-image: url('/assets/images/hotel4.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+height: 100%; 
+}
+
